@@ -9,6 +9,7 @@ import SensorPanel from "@/components/SensorPanel"
 import HistoryPanel from "@/components/HistoryPanel"
 import SchedulerPanel from "@/components/SchedulerPanel"
 import TimerPanel from "@/components/TimerPanel"
+import SettingsPanel from "@/components/SettingsPanel"
 
 import { fetchRelays, toggleRelay, toggleAllRelays, fetchSensors, checkConnection } from "@/services/relay"
 import { fetchHistory, addHistory, backupHistory, exportHistory } from "@/services/history"
@@ -468,6 +469,11 @@ function DashboardContent() {
               onCancelTimer={handleCancelTimer}
               initialRelayId={timerRelayId}
             />
+          )}
+
+          {/* === SETTINGS VIEW === */}
+          {activeView === "settings" && (
+            <SettingsPanel />
           )}
         </main>
       </div>

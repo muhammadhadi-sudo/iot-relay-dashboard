@@ -55,10 +55,45 @@ export type Toast = {
 }
 
 /** View aktif di sidebar */
-export type ViewType = "dashboard" | "history" | "scheduler" | "timer"
+export type ViewType = "dashboard" | "history" | "scheduler" | "timer" | "settings"
 
 /** Nama hari dalam bahasa Indonesia */
 export const DAY_NAMES = ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"] as const
 
 /** Nama relay default */
 export const RELAY_NAMES = ["Relay 1", "Relay 2", "Relay 3", "Relay 4"] as const
+
+/** Status WiFi dari ESP8266 */
+export type WifiStatus = {
+  mode: string
+  sta_connected: boolean
+  sta_ssid: string
+  sta_ip: string
+  rssi: number
+  ap_ssid: string
+  ap_ip: string
+  ap_pass: string
+}
+
+/** Jaringan WiFi dari scan */
+export type WifiNetwork = {
+  ssid: string
+  rssi: number
+  secured: boolean
+  channel: number
+}
+
+/** Device info lengkap dari ESP8266 */
+export type DeviceInfoExtended = {
+  device_name: string
+  ip_address: string
+  ap_ip: string
+  wifi_status: string
+  mac_address: string
+  uptime: number
+  free_heap: number
+  flash_size: number
+  cpu_freq: number
+  sdk_version: string
+}
+

@@ -133,5 +133,140 @@
     "relayId": 3,
     "action": "SCHEDULER OFF",
     "timestamp": "2026-06-24T15:53:05.228Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:14:16.704Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:14:18.282Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:15:58.365Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:16:00.162Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:16:01.791Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:16:02.688Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:16:03.504Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:16:04.138Z"
+  },
+  {
+    "relayId": 4,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:16:36.283Z"
+  },
+  {
+    "relayId": 3,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:16:37.680Z"
+  },
+  {
+    "relayId": 2,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:16:39.240Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:16:40.296Z"
+  },
+  {
+    "relayId": 4,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:16:43.043Z"
+  },
+  {
+    "relayId": 4,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:16:44.597Z"
+  },
+  {
+    "relayId": 4,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:16:45.928Z"
+  },
+  {
+    "relayId": 3,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:16:57.303Z"
+  },
+  {
+    "relayId": 2,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:16:58.924Z"
+  },
+  {
+    "relayId": 1,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:17:00.343Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:17:02.252Z"
+  },
+  {
+    "relayId": 1,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:17:04.741Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:20:26.489Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:21:26.581Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T16:21:28.501Z"
+  },
+  {
+    "relayId": 4,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:22:12.904Z"
+  },
+  {
+    "relayId": 4,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:22:14.150Z"
+  },
+  {
+    "relayId": 4,
+    "action": "OFF",
+    "timestamp": "2026-06-24T16:22:41.610Z"
+  },
+  {
+    "relayId": 4,
+    "action": "ON",
+    "timestamp": "2026-06-24T16:22:43.100Z"
   }
 ]
