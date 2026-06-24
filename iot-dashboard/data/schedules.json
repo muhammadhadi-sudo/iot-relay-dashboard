@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sch_1782316374530_yb7t9",
+    "relayId": 3,
+    "action": "OFF",
+    "time": "22:53",
+    "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "enabled": true,
+    "lastTriggered": "2026-06-24T15:53"
+  }
+]

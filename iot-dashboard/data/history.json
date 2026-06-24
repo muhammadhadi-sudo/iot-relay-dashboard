@@ -1,0 +1,137 @@
+[
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:16:41.217Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:16:44.770Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:16:49.880Z"
+  },
+  {
+    "relayId": 1,
+    "action": "OFF",
+    "timestamp": "2026-06-24T15:16:53.250Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:18:46.721Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:18:47.288Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:22:15.796Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:22:25.223Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:35:54.114Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:35:56.198Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:35:58.581Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:35:59.820Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:36:10.236Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:36:14.511Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:39:39.823Z"
+  },
+  {
+    "relayId": 1,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:39:42.835Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:42:05.841Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:42:07.973Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:51:09.623Z"
+  },
+  {
+    "relayId": 1,
+    "action": "SCHEDULER OFF",
+    "timestamp": "2026-06-24T15:52:05.238Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T15:52:22.327Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T15:52:23.558Z"
+  },
+  {
+    "relayId": 2,
+    "action": "OFF",
+    "timestamp": "2026-06-24T15:52:32.174Z"
+  },
+  {
+    "relayId": 2,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:52:34.701Z"
+  },
+  {
+    "relayId": 3,
+    "action": "OFF",
+    "timestamp": "2026-06-24T15:52:36.152Z"
+  },
+  {
+    "relayId": 3,
+    "action": "ON",
+    "timestamp": "2026-06-24T15:52:37.372Z"
+  },
+  {
+    "relayId": 3,
+    "action": "SCHEDULER OFF",
+    "timestamp": "2026-06-24T15:53:05.228Z"
+  }
+]

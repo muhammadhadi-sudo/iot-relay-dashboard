@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS Variables — Dark Mode (default)
+   ============================================ */
+:root {
+  --iot-bg: #060b18;
+  --iot-surface: #0d1526;
+  --iot-surface-hover: #131f36;
+  --iot-border: #1a2a48;
+  --iot-text: #e8edf5;
+  --iot-muted: #6b7fa3;
+  --iot-accent: #10b981;
+  --iot-accent-hover: #059669;
+  --iot-danger: #ef4444;
+  --iot-warning: #f59e0b;
+  --iot-info: #06b6d4;
+}
+
+/* Light mode overrides */
+.light {
+  --iot-bg: #f1f5f9;
+  --iot-surface: #ffffff;
+  --iot-surface-hover: #f8fafc;
+  --iot-border: #e2e8f0;
+  --iot-text: #0f172a;
+  --iot-muted: #64748b;
+  --iot-accent: #059669;
+  --iot-accent-hover: #047857;
+  --iot-danger: #dc2626;
+  --iot-warning: #d97706;
+  --iot-info: #0891b2;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--iot-bg);
+  color: var(--iot-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--iot-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--iot-muted);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+@layer components {
+  .glass-card {
+    background: var(--iot-surface);
+    border: 1px solid var(--iot-border);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+  .glass-card:hover {
+    border-color: color-mix(in srgb, var(--iot-border) 50%, var(--iot-accent) 50%);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px color-mix(in srgb, var(--iot-accent) 15%, transparent),
+                0 0 60px color-mix(in srgb, var(--iot-accent) 5%, transparent);
+  }
+
+  .glow-danger {
+    box-shadow: 0 0 20px color-mix(in srgb, var(--iot-danger) 15%, transparent),
+                0 0 60px color-mix(in srgb, var(--iot-danger) 5%, transparent);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--iot-accent), var(--iot-info));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200;
+    background: var(--iot-accent);
+    color: white;
+  }
+  .btn-primary:hover {
+    background: var(--iot-accent-hover);
+    transform: translateY(-1px);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200;
+    background: var(--iot-danger);
+    color: white;
+  }
+  .btn-danger:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    @apply px-3 py-2 rounded-lg font-medium text-sm transition-all duration-200;
+    background: transparent;
+    color: var(--iot-muted);
+    border: 1px solid var(--iot-border);
+  }
+  .btn-ghost:hover {
+    background: var(--iot-surface-hover);
+    color: var(--iot-text);
+    border-color: var(--iot-muted);
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 rounded-lg text-sm outline-none transition-all duration-200;
+    background: var(--iot-bg);
+    border: 1px solid var(--iot-border);
+    color: var(--iot-text);
+  }
+  .input-field:focus {
+    border-color: var(--iot-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--iot-accent) 15%, transparent);
+  }
+  .input-field::placeholder {
+    color: var(--iot-muted);
+  }
+
+  .select-field {
+    @apply w-full px-3 py-2 rounded-lg text-sm outline-none transition-all duration-200 appearance-none cursor-pointer;
+    background: var(--iot-bg);
+    border: 1px solid var(--iot-border);
+    color: var(--iot-text);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7fa3' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+  }
+  .select-field:focus {
+    border-color: var(--iot-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--iot-accent) 15%, transparent);
+  }
+}
+
+/* ============================================
+   Background Grid Pattern
+   ============================================ */
+.bg-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--iot-border) 30%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--iot-border) 30%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ============================================
+   Toggle Switch
+   ============================================ */
+.toggle-track {
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--iot-border);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.toggle-track.active {
+  background: var(--iot-accent);
+}
+.toggle-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.toggle-track.active .toggle-thumb {
+  transform: translateX(24px);
+}
+
+/* ============================================
+   Pulse Dot
+   ============================================ */
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+}
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  animation: pulseRing 2s ease-out infinite;
+}
+.pulse-dot.online {
+  background: var(--iot-accent);
+}
+.pulse-dot.online::after {
+  border: 2px solid var(--iot-accent);
+}
+.pulse-dot.offline {
+  background: var(--iot-danger);
+}
+.pulse-dot.offline::after {
+  border: 2px solid var(--iot-danger);
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
