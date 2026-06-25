@@ -268,5 +268,20 @@
     "relayId": 4,
     "action": "ON",
     "timestamp": "2026-06-24T16:22:43.100Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T16:57:56.955Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL ON",
+    "timestamp": "2026-06-24T17:28:13.373Z"
+  },
+  {
+    "relayId": 0,
+    "action": "ALL OFF",
+    "timestamp": "2026-06-24T17:28:14.919Z"
   }
 ]

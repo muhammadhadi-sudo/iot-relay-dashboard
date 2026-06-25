@@ -55,7 +55,7 @@ export type Toast = {
 }
 
 /** View aktif di sidebar */
-export type ViewType = "dashboard" | "history" | "scheduler" | "timer" | "settings"
+export type ViewType = "dashboard" | "history" | "scheduler" | "timer" | "settings" | "floorplan"
 
 /** Nama hari dalam bahasa Indonesia */
 export const DAY_NAMES = ["Min", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"] as const
@@ -95,5 +95,13 @@ export type DeviceInfoExtended = {
   flash_size: number
   cpu_freq: number
   sdk_version: string
+}
+
+export type FloorplanMarker = {
+  id: string
+  relayId: number
+  name: string
+  position: [number, number, number]
+  placed: boolean
 }
 

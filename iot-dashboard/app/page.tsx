@@ -10,6 +10,7 @@ import HistoryPanel from "@/components/HistoryPanel"
 import SchedulerPanel from "@/components/SchedulerPanel"
 import TimerPanel from "@/components/TimerPanel"
 import SettingsPanel from "@/components/SettingsPanel"
+import FloorplanPanel from "@/components/FloorplanPanel"
 
 import { fetchRelays, toggleRelay, toggleAllRelays, fetchSensors, checkConnection } from "@/services/relay"
 import { fetchHistory, addHistory, backupHistory, exportHistory } from "@/services/history"
@@ -469,6 +470,11 @@ function DashboardContent() {
               onCancelTimer={handleCancelTimer}
               initialRelayId={timerRelayId}
             />
+          )}
+
+          {/* === FLOORPLAN VIEW === */}
+          {activeView === "floorplan" && (
+            <FloorplanPanel relays={relays} />
           )}
 
           {/* === SETTINGS VIEW === */}

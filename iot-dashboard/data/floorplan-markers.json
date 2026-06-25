@@ -1,0 +1,46 @@
+[
+  {
+    "id": "m1",
+    "relayId": 1,
+    "name": "Relay 1",
+    "position": [
+      0,
+      0.3,
+      0
+    ],
+    "placed": false
+  },
+  {
+    "id": "m2",
+    "relayId": 2,
+    "name": "Relay 2",
+    "position": [
+      1,
+      0.3,
+      0
+    ],
+    "placed": false
+  },
+  {
+    "id": "m3",
+    "relayId": 3,
+    "name": "Relay 3",
+    "position": [
+      2,
+      0.3,
+      0
+    ],
+    "placed": false
+  },
+  {
+    "id": "m4",
+    "relayId": 4,
+    "name": "Relay 4",
+    "position": [
+      0,
+      0.3,
+      0
+    ],
+    "placed": false
+  }
+]
